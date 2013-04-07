@@ -1,5 +1,5 @@
 DIR=~/dotfiles
-OLDDIR=~/dotfiles_old
+OLDDIR=~/.dotfiles_old
 FILES=.vim .vimrc .bashrc .bash_aliases
 
 all: $(FILES)
