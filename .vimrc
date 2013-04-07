@@ -13,8 +13,8 @@ set mouse=a
 set tabstop=4
 set shiftwidth=4
 set shiftround
-"set ignorecase
-"set smartcase
+set ignorecase
+set smartcase
 
 "Use Ctrl-J and Ctrl-K to move between windows
 map <C-J> <C-W>j
