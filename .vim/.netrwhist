@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/media/win7/Users/New User/Dropbox/College'
+let g:netrw_dirhist_2='/media/win7/Users/New User/Dropbox/College/Modern Algebra'
+let g:netrw_dirhist_3='/home/christian/dotfiles/.vim/.vim'
