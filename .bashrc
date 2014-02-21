@@ -1,6 +1,13 @@
-export PATH=$PATH:/sbin:/opt/metasploit-framework/
+export PATH=~/bin:$PATH:/sbin:/usr/sbin:/opt/metasploit-framework/:/home/christian/Downloads/gnuarm-4.0.2/bin:/usr/local/bin/flair61/bin/linux
+source /usr/local/bin/virtualenvwrapper.sh
+export DEVKITPRO=/opt/devkitpro;
+export DEVKITPPC=$DEVKITPRO/devkitPPC;
 if [ -e ~/.bash_aliases ]; then . ~/.bash_aliases; fi
 export EDITOR=vim
+
+export WORKON_HOME=~/.virtualenvs
+
+export LOLCOMMITS_DELAY=3
 
 if [ -z "$COLUMNS" ]; then
 	COLUMNS=`tput cols`;
@@ -14,5 +21,8 @@ fi
 if [ "$TERM" != "linux" ]; then
 	greeting="$greeting | lolcat"
 fi
+
+# enable autocompletion
+#. /etc/bash_completion
 
 #$greeting

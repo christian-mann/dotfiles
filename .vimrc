@@ -1,4 +1,5 @@
 execute pathogen#infect()
+execute pathogen#helptags()
 filetype on
 filetype plugin indent on
 
@@ -22,16 +23,22 @@ map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
 
+" Make Y behave like C, D
+nnoremap Y y$
+
 " Make pressing down/up work nicely on long lines
 nnoremap j gj
 nnoremap k gk
-
+" Restore ability to scroll line at a time
 nnoremap gj j
 nnoremap gk k
 
 " allow ; as a replacement for : (no shift key!)
 nnoremap ; :
 vnoremap ; :
+
+" reset timeout because wtf vim
+set timeoutlen=0
 
 " control-backspace for delete word
 imap <C-BS> <C-W>
@@ -76,3 +83,15 @@ set noerrorbells visualbell t_vb=
 if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
+
+nnoremap <F2> :call TestFunctionPleaseIgnore()<CR>
+nnoremap <F5> :redraw!<CR>
+
+" tags
+set tags=./tags;/
+
+map <leader>u <Esc>yypVr=
+
+" latex-suite
+"set grepprg=grep\ -nH\ $*
+"let g:tex_flavor='latex'

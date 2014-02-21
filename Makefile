@@ -1,6 +1,6 @@
 DIR=~/dotfiles
 OLDDIR=~/.dotfiles_old
-FILES=.vim .vimrc .bashrc .bash_aliases
+FILES=.vim .vimrc .bashrc .bash_aliases .screenrc
 
 all: $(FILES)
 	mkdir -p $(OLDDIR)

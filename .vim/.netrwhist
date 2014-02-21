@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/media/win7/Users/New User/Dropbox/College'
-let g:netrw_dirhist_2='/media/win7/Users/New User/Dropbox/College/Modern Algebra'
-let g:netrw_dirhist_3='/home/christian/dotfiles/.vim/.vim'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/media/data/devkitpro/libogc-src/lwip/arch/gc'
+let g:netrw_dirhist_2='/media/data/devkitpro/libogc-src/lwip/arch/gc/netif'
+let g:netrw_dirhist_3='/media/win7/Users/New User/Dropbox/College/Embedded Reverse Engineering/p5/gobias/code/asm/final'
+let g:netrw_dirhist_4='/tmp'
+let g:netrw_dirhist_5='/media/win7/Users/New User/Dropbox/College/Computational Neuroscience/p2/homegrown-neural-network/neuralnet'
+let g:netrw_dirhist_6='/media/win7/Users/New User/Dropbox/medappz/web/data/1162464'
+let g:netrw_dirhist_7='/media/win7/Users/New User/Dropbox/medappz/web/data/1162464/outsideInfo'
+let g:netrw_dirhist_8='/media/win7/Users/New User/Dropbox/medappz/web/data/1162464'
