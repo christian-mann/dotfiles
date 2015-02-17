@@ -38,7 +38,9 @@ nnoremap ; :
 vnoremap ; :
 
 " reset timeout because wtf vim
-set timeoutlen=0
+" edit: Don't do this if you want to use multiple characters
+" in remaps. It is intended to fix a problem with the <Esc>O sequence.
+"set timeoutlen=1
 
 " control-backspace for delete word
 imap <C-BS> <C-W>
@@ -95,3 +97,6 @@ map <leader>u <Esc>yypVr=
 " latex-suite
 "set grepprg=grep\ -nH\ $*
 "let g:tex_flavor='latex'
+"
+inoremap <C-E> <C-O>$
+inoremap <C-A> <C-O>^
