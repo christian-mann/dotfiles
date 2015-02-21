@@ -17,6 +17,9 @@ set shiftround
 set ignorecase
 set smartcase
 
+" make sure we can backspace auto-indentation
+set backspace=indent,eol,start
+
 "Use Ctrl-J and Ctrl-K to move between windows
 map <C-J> <C-W>j
 map <C-K> <C-W>k
@@ -100,3 +103,7 @@ map <leader>u <Esc>yypVr=
 "
 inoremap <C-E> <C-O>$
 inoremap <C-A> <C-O>^
+
+" YouCompleteMe configuration
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
