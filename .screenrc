@@ -16,6 +16,8 @@ bind  ) select 10
 
 bind K kill
 
+escape ^ a
+
 
 
 altscreen on
