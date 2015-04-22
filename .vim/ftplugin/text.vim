@@ -1,2 +1,4 @@
 set linebreak
-set spell
+"set spell
+
+set tw=80

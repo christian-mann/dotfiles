@@ -16,3 +16,5 @@ func! CompileRunGcc()
 	exec "!gcc -g -std=c99 % -o %<"
 	exec "! ./%<"
 endfunc
+
+inoremap {<CR> {<CR><Backspace>}<Esc>O

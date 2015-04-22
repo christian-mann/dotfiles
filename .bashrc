@@ -1,11 +1,10 @@
-export PATH=~/bin:$PATH:/sbin:/usr/sbin:/opt/metasploit-framework/:/home/christian/Downloads/gnuarm-4.0.2/bin:/usr/local/bin/flair61/bin/linux
-source /usr/local/bin/virtualenvwrapper.sh
-export DEVKITPRO=/opt/devkitpro;
-export DEVKITPPC=$DEVKITPRO/devkitPPC;
+export PATH=~/bin:$PATH:/sbin:/usr/sbin:/usr/local/gcc-4.8.0-qt-4.8.4-for-mingw32/win32-gcc/bin/:/Users/christian/Downloads/android-sdk-macosx/platform-tools
+
+# gnu coreutils
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 if [ -e ~/.bash_aliases ]; then . ~/.bash_aliases; fi
 export EDITOR=vim
-
-export WORKON_HOME=~/.virtualenvs
 
 export LOLCOMMITS_DELAY=3
 
@@ -26,3 +25,10 @@ fi
 #. /etc/bash_completion
 
 #$greeting
+
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
+export PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH
+alias ipython="/Users/christian/Library/Python/2.7/bin/ipython"
+PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
+
+shopt -s globstar

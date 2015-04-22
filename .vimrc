@@ -51,6 +51,10 @@ imap <C-BS> <C-W>
 "w!! for sudo write
 ca w!! w !sudo tee % > /dev/null 
 
+" make file tab complete better
+set wildmode=longest,list,full
+set wildmenu
+
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
 "  "100 :  will save up to 100 lines for each register
@@ -95,7 +99,7 @@ nnoremap <F5> :redraw!<CR>
 " tags
 set tags=./tags;/
 
-map <leader>u <Esc>yypVr=
+nnoremap <leader>u <Esc>yypVr=
 
 " latex-suite
 "set grepprg=grep\ -nH\ $*
@@ -106,4 +110,8 @@ inoremap <C-A> <C-O>^
 
 " YouCompleteMe configuration
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+
+" weird filetypes
+au BufRead,BufNewFile *.jy set filetype=python
 

@@ -10,7 +10,7 @@
 function! LatexEndTag()
 	s/\(\s*\)\(\\begin{\([^}]\+\)}\)$/\1\2\r\1\\end{\3}/e
 endfunc
-set spell
+"set spell
 set linebreak
 
 map <F2> : call SyntaxCheck()<CR>
@@ -29,7 +29,7 @@ map <F4> :call CompileView()<CR>
 func! CompileView()
 	" Assumes that the output pdf is the only one in the directory
 	exec "w"
-	exec "!latexmk -pdf; evince `basename % .tex`.pdf &>/dev/null &"
+	exec "!latexmk -pdf; open `basename % .tex`.pdf"
 endfunc
 
 iab tlg topology
@@ -38,3 +38,5 @@ iab tlgl topological
 
 iab wlog without loss of generality
 iab WLOG Without loss of generality
+
+set textwidth=80
