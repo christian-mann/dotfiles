@@ -7,7 +7,8 @@ syntax on
 set nocompatible
 set autoindent
 set copyindent
-set nohls
+"set hlsearch
+set nohlsearch
 set undofile
 set mouse=a
 
@@ -55,6 +56,9 @@ ca w!! w !sudo tee % > /dev/null
 set wildmode=longest,list,full
 set wildmenu
 
+" detect filetype on unsaved buffer
+au! CursorHold * filetype detect
+
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
 "  "100 :  will save up to 100 lines for each register
@@ -75,16 +79,7 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 
-function! NumberToggle()
-	if(&relativenumber == 1)
-		set norelativenumber
-		set number
-	else
-		set nonumber
-		set relativenumber
-	endif
-endfunc
-nnoremap <C-n> :call NumberToggle()<CR>
+nnoremap <C-n> :set nonumber!<CR>
 set number
 
 " disable bell
@@ -109,7 +104,7 @@ inoremap <C-E> <C-O>$
 inoremap <C-A> <C-O>^
 
 " YouCompleteMe configuration
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 
 " weird filetypes

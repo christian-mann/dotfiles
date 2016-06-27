@@ -49,7 +49,7 @@ else
 	};
 	#mkdir() { command mkdir "$@" && cd "$@"; };
 	alias christian="echo Yup.";
-	alias ls="ls --color=auto";
+	alias ls="ls --color=auto -N"; # color because color, -N because wtf coreutils don't put quotes where they don't belong
 	alias batman="cat ~/.config/batmanBefore.txt; acpi | grep '[0-9 ][0-9]%' -o | head -1 | tr -d '\n'; cat ~/.config/batmanAfter.txt"
 	bdiff() { colordiff <(xxd "$1") <(xxd "$2"); };
 	google() { if [ "$#" == 0 ]; then w3m http://www.google.com; else w3m http://www.google.com/search?q=`echo $* | tr ' ' '+'`; fi; }; 

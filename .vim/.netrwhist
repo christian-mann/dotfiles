@@ -1,9 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/christian/Dropbox/College/CNO/knock-knock/phase-3/10.50.239.114'
-let g:netrw_dirhist_2='/Users/christian/Dropbox/College/Malware/unexpectedorca/doc'
-let g:netrw_dirhist_3='/Users/christian/Dropbox/College/Malware/unexpectedorca/src'
-let g:netrw_dirhist_4='/Users/christian/Dropbox/College/Undergrad/Sophomore Year/Computer Security/Project 2'
-let g:netrw_dirhist_5='/Users/christian/Desktop/ComputerSecurity2011/WebsiteBackup'
-let g:netrw_dirhist_6='/Users/christian/.vim'
-let g:netrw_dirhist_7='/Users/christian/c'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/christian/Dropbox/ComputerSecurity2015/Assignments/Test3/src/csec2015'
+let g:netrw_dirhist_2='/Users/christian/Dropbox/College/Spring 2015/ComputerSecurity2015/Assignments/Test2/csec2015'
+let g:netrw_dirhist_3='/private/tmp'
+let g:netrw_dirhist_4='/Users/christian/Dropbox/diary/.git'

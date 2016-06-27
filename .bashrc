@@ -28,7 +28,14 @@ fi
 
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 export PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH
+export PATH=/home/christian/bin:$PATH
 alias ipython="/Users/christian/Library/Python/2.7/bin/ipython"
 PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-darwin/
 
 shopt -s globstar
+
+# Grab a random thought from /r/showerthoughts
+SUBREDDIT=showerthoughts
+curl -s --connect-timeout 5 -A '/u/christian-mann' \
+'https://www.reddit.com/r/'$SUBREDDIT'/top.json?sort=top&t=week&limit=100' | \
+python2.7 -c 'import sys, random, json; randnum = random.randint(0,99); response = json.load(sys.stdin)["data"]["children"][randnum]["data"]; print "\n\"" + response["title"] + "\""; print "    -" + response["author"] + "\n";'

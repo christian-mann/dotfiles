@@ -22,7 +22,7 @@ endfunc
 map <F3> : call Compile()<CR>
 func! Compile()
 	exec "w"
-	exec "!latexmk -pdf"
+	exec "!pdflatex %"
 endfunc
 
 map <F4> :call CompileView()<CR>
