@@ -39,3 +39,8 @@ SUBREDDIT=showerthoughts
 curl -s --connect-timeout 5 -A '/u/christian-mann' \
 'https://www.reddit.com/r/'$SUBREDDIT'/top.json?sort=top&t=week&limit=100' | \
 python2.7 -c 'import sys, random, json; randnum = random.randint(0,99); response = json.load(sys.stdin)["data"]["children"][randnum]["data"]; print "\n\"" + response["title"] + "\""; print "    -" + response["author"] + "\n";'
+
+#sudo ifconfig en0 ether b3:0d:15:23:1b:f3
+alias macchanger=<<EOF
+sudo ifconfig en0 ether $(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
+EOF

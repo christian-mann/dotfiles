@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/christian/Dropbox/ComputerSecurity2015/Assignments/Test3/src/csec2015'
-let g:netrw_dirhist_2='/Users/christian/Dropbox/College/Spring 2015/ComputerSecurity2015/Assignments/Test2/csec2015'
-let g:netrw_dirhist_3='/private/tmp'
-let g:netrw_dirhist_4='/Users/christian/Dropbox/diary/.git'
+let g:netrw_dirhist_1='/Users/christian/Dropbox/College/Fall 2015/Cryptography/labs'
+let g:netrw_dirhist_2='/Users/christian/Dropbox/College/Fall 2015/Cryptography/labs/lab4-dist'
+let g:netrw_dirhist_3='/Users/christian/Dropbox/College/Fall 2015/Cryptography'
+let g:netrw_dirhist_4='/Users/christian/Dropbox/College/Fall 2015/Cryptography/lectures'

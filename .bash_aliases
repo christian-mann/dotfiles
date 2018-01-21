@@ -44,14 +44,15 @@ else
 	# allow aliases after sudo
 	alias sudo="sudo ";
 	cd() {
-		command cd "$@" && ls --color=auto;
+		command cd "$@" && ls --color=auto -N;
 		#complete -W "$(_ssh_completion)" ssh scp sftp; # ehhh
 	};
 	#mkdir() { command mkdir "$@" && cd "$@"; };
 	alias christian="echo Yup.";
 	alias ls="ls --color=auto -N"; # color because color, -N because wtf coreutils don't put quotes where they don't belong
 	alias batman="cat ~/.config/batmanBefore.txt; acpi | grep '[0-9 ][0-9]%' -o | head -1 | tr -d '\n'; cat ~/.config/batmanAfter.txt"
-	bdiff() { colordiff <(xxd "$1") <(xxd "$2"); };
+	alias proxychains="proxychains4 -f ~/proxychains.conf"
+	bdiff() { colordiff -y <(xxd "$1" | cut -f2- -d:) <(xxd "$2" | cut -f2- -d:); };
 	google() { if [ "$#" == 0 ]; then w3m http://www.google.com; else w3m http://www.google.com/search?q=`echo $* | tr ' ' '+'`; fi; }; 
 	lucky() { w3m http://www.google.com/search?q=`echo $* | tr ' ' '+'`'&btnI=I%27m+Feeling+Lucky'; };
 fi;
