@@ -10,7 +10,7 @@ set copyindent
 "set hlsearch
 set nohlsearch
 set undofile
-set mouse=a
+"set mouse=a
 
 set tabstop=4
 set shiftwidth=4

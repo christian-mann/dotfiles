@@ -11,6 +11,9 @@ alias watch="watch -n 1";
 #alias make="make -j3";
 alias please="sudo";
 
+# thanks mac osx
+alias top="top -o cpu";
+
 alias clip="xsel --clipboard";
 
 alias lock="xscreensaver-command -lock && sudo pm-suspend";

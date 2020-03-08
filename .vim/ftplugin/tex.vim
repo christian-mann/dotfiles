@@ -29,7 +29,7 @@ map <F4> :call CompileView()<CR>
 func! CompileView()
 	" Assumes that the output pdf is the only one in the directory
 	exec "w"
-	exec "!latexmk -pdf; open `basename % .tex`.pdf"
+	exec "!latexmk -pdf %; open `basename % .tex`.pdf"
 endfunc
 
 iab tlg topology
